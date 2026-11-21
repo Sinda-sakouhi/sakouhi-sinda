@@ -1,2 +1,1 @@
-# sakouhi-sinda
-Projet Devops Jenkins
+# Projet DevOps - Sinda Sakouhi
