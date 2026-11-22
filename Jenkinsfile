@@ -2,10 +2,12 @@ pipeline {
     agent any
 
     stages {
+
         stage('Checkout Git') {
             steps {
                 git branch: 'main',
-                url: 'https://github.com/Sinda-sakouhi/sakouhi-sinda.git'
+                    credentialsId: 'github-credentials',
+                    url: 'https://github.com/Sinda-sakouhi/sakouhi-sinda.git'
             }
         }
 
@@ -16,3 +18,4 @@ pipeline {
         }
     }
 }
+
